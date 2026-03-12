@@ -41,5 +41,3 @@ Geliştirme sunucusunu başlatın: npm run dev
 Emirhan
 
 GitHub: @Emirhangn
-
-     git clone [https://github.com/Emirhangn/technovo-ecommerce.git](https://github.com/Emirhangn/technovo-ecommerce.git)
