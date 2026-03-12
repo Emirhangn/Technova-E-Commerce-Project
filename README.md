@@ -23,8 +23,23 @@ Technova, modern web teknolojilerini kullanarak uçtan uca bir e-ticaret deneyim
 * Node.js & npm
 * PostgreSQL
 
-### Adımlar
-
 1. **Projeyi klonlayın:**
    ```bash
    git clone [https://github.com/Emirhangn/technovo-ecommerce.git](https://github.com/Emirhangn/technovo-ecommerce.git)
+
+2. Backend Kurulumu:
+Backend dizinine gidin.
+application.properties dosyasındaki veritabanı url, kullanıcı adı ve şifre bilgilerinizi kendi lokal PostgreSQL ayarlarınıza göre güncelleyin.
+Uygulamayı başlatın.
+
+3. Frontend Kurulumu:
+FRONTEND dizinine gidin.
+Bağımlılıkları yükleyin: npm install
+Geliştirme sunucusunu başlatın: npm run dev
+
+👨‍💻 Geliştirici
+Emirhan
+
+GitHub: @Emirhangn
+
+     git clone [https://github.com/Emirhangn/technovo-ecommerce.git](https://github.com/Emirhangn/technovo-ecommerce.git)
