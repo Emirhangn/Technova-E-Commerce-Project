@@ -4,29 +4,21 @@ import { toggleCart, removeFromCart } from '../store/cartSlice';
 
 const CartDrawer = () => {
   const dispatch = useDispatch();
-  // Redux'tan sepet verilerini ve menünün açık/kapalı durumunu çekiyoruz
   const { cartItems, isCartOpen, cartTotalQuantity } = useSelector((state) => state.cart);
 
-  // Toplam fiyatı hesaplama (reduce fonksiyonu ile)
   const subtotal = cartItems.reduce((total, item) => total + (item.price * item.cartQuantity), 0);
-  const tax = subtotal * 0.08; // %8 Vergi uyduralım
+  const tax = subtotal * 0.08;
   const total = subtotal + tax;
-
-  // Eğer menü kapalıysa hiçbir şey render etme (gösterme)
   if (!isCartOpen) return null;
 
   return (
     <>
-      {/* Arka planı karartan yarı saydam siyah katman (Backdrop) */}
       <div 
         className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity"
-        onClick={() => dispatch(toggleCart())} // Boşluğa tıklayınca da kapansın
+        onClick={() => dispatch(toggleCart())}
       ></div>
 
-      {/* Sağdan açılan beyaz menü paneli */}
       <div className="fixed inset-y-0 right-0 max-w-md w-full bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right">
-        
-        {/* Üst Kısım: Başlık ve Kapatma Butonu */}
         <div className="flex items-center justify-between p-6 border-b border-gray-100">
           <h2 className="text-xl font-black text-gray-900">Your Cart ({cartTotalQuantity} Items)</h2>
           <button 
@@ -36,8 +28,6 @@ const CartDrawer = () => {
             <X className="w-5 h-5" />
           </button>
         </div>
-
-        {/* Orta Kısım: Ürün Listesi */}
         <div className="flex-1 overflow-y-auto p-6">
           {cartItems.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-gray-500">
@@ -58,7 +48,6 @@ const CartDrawer = () => {
                       <span className="text-xs font-semibold bg-gray-100 px-2 py-1 rounded">Qty: {item.cartQuantity}</span>
                     </div>
                   </div>
-                  {/* Ürünü Silme Butonu */}
                   <button 
                     onClick={() => dispatch(removeFromCart(item))}
                     className="p-2 text-red-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
@@ -70,8 +59,6 @@ const CartDrawer = () => {
             </div>
           )}
         </div>
-
-        {/* Alt Kısım: Sipariş Özeti (Order Summary) */}
         {cartItems.length > 0 && (
           <div className="p-6 bg-gray-50 border-t border-gray-100">
             <h3 className="font-bold text-gray-900 mb-4">Order Summary</h3>
@@ -99,7 +86,6 @@ const CartDrawer = () => {
             </button>
           </div>
         )}
-
       </div>
     </>
   );
