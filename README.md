@@ -26,12 +26,15 @@ Stateless Yapı: Sunucu tarafında oturum tutulmaz, tüm yetkilendirme token üz
 Role-Based Access Control (RBAC): Kullanıcılar USER ve ADMIN rolleriyle birbirinden ayrılır.
 
 
+
 🛡️ Yetkilendirme Kuralları
 Sistemdeki veri bütünlüğünü korumak adına hassas işlemler sıkı yetkilendirme kurallarına bağlanmıştır:
 
 Ürün Silme Ve Ekleme / Kullanıcı Yönetimi: Bu yetkiler tamamen Admin rolüne aittir.
 
 Kısıtlamalar: USER rolüne sahip standart bir kullanıcı, sistemdeki ürünleri veya diğer kullanıcıları asla silemez. Sadece kendi profil bilgilerini ve sipariş geçmişini yönetebilir.
+
+
 
 
 👨‍💼 Admin Paneli Özellikleri
