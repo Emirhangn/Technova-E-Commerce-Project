@@ -20,20 +20,32 @@ Güvenlik: JWT (JSON Web Token)
 
 🔐 Güvenlik ve Kimlik Doğrulama (JWT)
 Sistemde güvenlik, JWT (JSON Web Token) tabanlı bir yapı üzerine kuruludur. Kullanıcılar giriş yaptıklarında kendilerine özel bir token tanımlanır ve bu token üzerinden yetkilendirme yapılır.
+
 Stateless Yapı: Sunucu tarafında oturum tutulmaz, tüm yetkilendirme token üzerinden döner.
+
 Role-Based Access Control (RBAC): Kullanıcılar USER ve ADMIN rolleriyle birbirinden ayrılır.
+
 
 🛡️ Yetkilendirme Kuralları
 Sistemdeki veri bütünlüğünü korumak adına hassas işlemler sıkı yetkilendirme kurallarına bağlanmıştır:
+
 Ürün Silme Ve Ekleme / Kullanıcı Yönetimi: Bu yetkiler tamamen Admin rolüne aittir.
+
 Kısıtlamalar: USER rolüne sahip standart bir kullanıcı, sistemdeki ürünleri veya diğer kullanıcıları asla silemez. Sadece kendi profil bilgilerini ve sipariş geçmişini yönetebilir.
 
+
 👨‍💼 Admin Paneli Özellikleri
+
 Gelişmiş admin paneli sayesinde platformun tüm yönetimi tek bir noktadan sağlanır:
+
 Ürün Yönetimi: Yeni ürün ekleme, stok güncelleme ve ürün silme işlemleri.
+
 Kullanıcı Denetimi: Kayıtlı kullanıcıların listelenmesi ve yönetilmesi.
+
 Sipariş Takibi: Gelen siparişlerin durumunun anlık olarak izlenmesi.
+
 Dashboard: Satış verileri ve kullanıcı hareketlerinin genel özeti.
+
 
 ## ⚙️ Kurulum ve Çalıştırma
 
