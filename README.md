@@ -52,10 +52,13 @@ Dashboard: Satış verileri ve kullanıcı hareketlerinin genel özeti.
 ## 📸 Project Screenshots
 
 ### Admin Dashboard (Restricted Access)
-![<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1c277aca-729c-4020-bfc6-9870521dbaea" />)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1c277aca-729c-4020-bfc6-9870521dbaea" />
 
 ### Shopping Experience
-![<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6de560b2-5a38-4422-b3a9-4d750cfc9b26" />)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6de560b2-5a38-4422-b3a9-4d750cfc9b26" />
+
+### Home Page
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/8b2262a6-d7b1-46c5-a380-5199369bc493" />
 
 
 ## ⚙️ Kurulum ve Çalıştırma
