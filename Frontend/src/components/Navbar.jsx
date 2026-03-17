@@ -51,7 +51,7 @@ const Navbar = () => {
                 className="flex items-center space-x-1 text-red-500 hover:text-red-700 transition-colors font-medium"
               >
                 <LogOut className="h-5 w-5" />
-                <span className="text-sm">Çıkış</span>
+                <span className="text-sm">Log Out</span>
               </button>
             ) : (
               <Link to="/auth" className="text-gray-600 hover:text-blue-600 transition-colors">
