@@ -12,7 +12,7 @@ Technova, modern web teknolojileriyle geliştirilmiş, ölçeklenebilir ve güve
 ## 🛠️ Kullanılan Teknolojiler
 Backend: Java 17, Spring Boot, Spring Security
 
-Frontend: React.js, Tailwind CSS / Bootstrap ,Redux ,
+Frontend: React.js, Tailwind CSS / Bootstrap ,Redux ,React Router
 
 Veritabanı: PostgreSQL
 
