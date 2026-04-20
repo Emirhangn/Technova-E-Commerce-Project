@@ -1,11 +1,11 @@
 import ProductCard from './ProductCard';
-import axios from 'axios';
+import api from '../api'; 
 import { useQuery } from '@tanstack/react-query';
 import { Loader2 } from 'lucide-react';
 import { useSelector } from 'react-redux';
 
 const fetchProducts = async (searchTerm) => {
-  const response = await axios.get('http://localhost:8080/api/products', {
+  const response = await api.get('/products', {
     params: { name: searchTerm }
   });
   return response.data;
