@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { loginSuccess } from '../store/authSlice';
 import toast from 'react-hot-toast';
 import { LogIn, UserPlus, Loader2 } from 'lucide-react';
-
+import api from '../api';
 const AuthPage = () => {
     const [isLogin, setIsLogin] = useState(true);
     const [isLoading, setIsLoading] = useState(false)
@@ -26,9 +26,8 @@ const AuthPage = () => {
 
     try {
       const endpoint = isLogin ? 'authenticate' : 'register';
-      const url = `http://localhost:8080/api/auth/${endpoint}`;
-
-      const response = await axios.post(url, formData);
+      const response = await api.post(`/auth/${endpoint}`, formData);
+      
       console.log("JAVA'DAN GELEN CEVAP:", response);
 
       if (response.data && response.data.token) {
