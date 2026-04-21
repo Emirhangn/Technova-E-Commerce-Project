@@ -3,11 +3,11 @@ import { Star, Loader2 } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../store/cartSlice';
 import toast from 'react-hot-toast';
-import axios from 'axios';
+import api from '../api'; 
 import { useQuery } from '@tanstack/react-query';
 
 const fetchProduct = async (id) => {
-  const response = await axios.get(`http://localhost:8080/api/products/${id}`);
+  const response = await api.get(`/products/${id}`);
   return response.data;
 };
 
