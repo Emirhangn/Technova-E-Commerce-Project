@@ -9,7 +9,16 @@
 ![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
 
 Technova, modern web teknolojileriyle geliştirilmiş, ölçeklenebilir ve güvenli bir e-ticaret platformudur. Proje, backend tarafında Spring Boot'un gücünü, frontend tarafında ise React'in esnekliğini kullanarak tam kapsamlı, uçtan uca (E2E) test edilmiş bir alışveriş deneyimi sunar.
+🌐 Canlı Demo ve Test (Live Demo)
+Projeyi yerel ortamda kurmakla uğraşmadan direkt olarak canlı sunucu üzerinden test edebilirsiniz:
 
+Canlı Uygulama Adresi: https://technova-e-commerce-project.vercel.app
+
+Admin Paneli: https://technova-e-commerce-project.vercel.app/admin
+
+Admin girişi bilgileri:
+mail = admin@test.com
+şifre = 123
 ## 🛠️ Kullanılan Teknolojiler
 * **Backend:** Java 17, Spring Boot 3, Spring Security, Hibernate (JPA)
 * **Frontend:** React.js, Vite, Tailwind CSS / Bootstrap, React Router
